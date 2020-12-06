@@ -1,0 +1,31 @@
+<p>
+  <input type="text" value="{{firstText}}">
+  {{firstText}}
+</p>
+<p>
+  <input type="text" [value]="secondText">
+  {{secondText}}
+</p>
+<p>
+  <input type="text" [(ngModel)]="firstText">
+  <input type="text" [(ngModel)]="secondText">
+</p>
+<button (click)="printValues()">print</button>
+
+<hr/>
+
+<app-new-one inputText="Переденный текст"></app-new-one>
+<br/>
+<app-new-one [inputText]="firstText"></app-new-one>
+<br/>
+
+<hr/>
+
+<app-second (onChange)="setMyText($event)"></app-second>
+
+<hr/>
+
+<input #number1 type="number"/>
+<input #number2 type="number"/>
+<button (click)="sum(number1.value, number2.value)">sum</button>
+{{answer}}

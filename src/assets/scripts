@@ -1,0 +1,7 @@
+ng g m new -m=app
+ng g c new --skipTests --export=true -m=app
+ng g d new --skipTests
+ng g s new --skipTests
+ng g i new
+ng g interceptor new
+ng g m new -m=app && ng g c newComponent --skipTests --export=true -m=new
