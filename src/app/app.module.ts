@@ -12,6 +12,7 @@ import {DependencyInjectionModule} from './dependency-injection/dependency-injec
 import {RoutingModule} from './routing/routing.module';
 import { FormsExampleModule } from './forms/forms-example.module';
 import { PipeModule } from './pipe/pipe.module';
+import { HttpModule } from './http/http.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { PipeModule } from './pipe/pipe.module';
     RoutingModule,
     FormsExampleModule,
     PipeModule,
-    PipeModule
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

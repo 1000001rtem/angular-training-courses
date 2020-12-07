@@ -24,4 +24,6 @@
 
 [pipe](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/pipe) - Примеры pipe
 
+[http](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/http) - Запросы на сервер (HttpClient) и Interceptor
+
 [chess](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/chess) - Шахматная доска
