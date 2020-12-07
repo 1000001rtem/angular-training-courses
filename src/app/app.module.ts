@@ -11,6 +11,7 @@ import {ChessModule} from './chess/chess.module';
 import {DependencyInjectionModule} from './dependency-injection/dependency-injection.module';
 import {RoutingModule} from './routing/routing.module';
 import { FormsExampleModule } from './forms/forms-example.module';
+import { PipeModule } from './pipe/pipe.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { FormsExampleModule } from './forms/forms-example.module';
     ChessModule,
     DependencyInjectionModule,
     RoutingModule,
-    FormsExampleModule
+    FormsExampleModule,
+    PipeModule,
+    PipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
