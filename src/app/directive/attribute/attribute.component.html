@@ -1,0 +1,69 @@
+<div [class.verdanaFont]="true">
+  <h5>Односторенняя привязка данных</h5>
+  <p [class.verdanaFont]="false" [class.segoePrintFont]="true">
+    Angular 10 представляет модульную архитектуру приложения
+  </p>
+</div>
+
+<h1>
+  Директива ngClass принимает js-объект, в котором ключи - это названия классов
+</h1>
+
+<div [ngClass]="{ verdanaFont: true }">
+  <h5>Булевые значения</h5>
+  <p [ngClass]="{ segoePrintFont: true }">
+    Angular 10 представляет модульную архитектуру приложения
+  </p>
+</div>
+
+<div [ngClass]="{ verdanaFont: isVerdana }">
+  <h5>Привязка к выражениям</h5>
+  <p [ngClass]="{ segoePrintFont: isSegoe }">
+    Angular 10 представляет модульную архитектуру приложения
+  </p>
+</div>
+
+<div [ngClass]="divClasses">
+  <h5>Задание набора классов через js-объект</h5>
+  <p [ngClass]="pClasses">
+    Angular 10 представляет модульную архитектуру приложения
+  </p>
+</div>
+
+<div [ngClass]="{ invisible: visibility }">
+  <h1>Динамическое изменение стилей</h1>
+  <p>Angular 10 представляет модульную архитектуру приложения</p>
+</div>
+<button (click)="toggle()">Toggle</button>
+
+<h5>Односторенняя привязка данных</h5>
+
+<div [style.fontSize]="'13px'" [style.fontFamily]="'Verdana'">
+  <h1>Установки стилей можно применять свойства объекта style</h1>
+  <p [style.fontSize]="'14px'" [style.fontFamily]="'Segoe Print'">
+    Angular 10 представляет модульную архитектуру приложения
+  </p>
+</div>
+
+<h1>Директива ngStyle</h1>
+<p>
+  позволяет задать набор стилей, которые применяются к элементу. В качестве
+  значения директива принимает js-объект, в котором ключи - названия свойств CSS
+</p>
+<div [ngStyle]="{ 'font-size': '13px', 'font-family': 'Verdana' }">
+  <h1>Динамическое изменение стилей</h1>
+  <p [ngStyle]="{ 'font-size': '14px', 'font-family': 'Segoe Print' }">
+    Angular 10 представляет модульную архитектуру приложения
+  </p>
+  <p [ngStyle]="{ 'font-size': pFontSize, 'font-family': pFontFamily }">
+    Angular 10 представляет модульную архитектуру приложения val
+  </p>
+  <p [ngStyle]="{ 'font-size': pStyle['font-size'], 'font-family': pFontFamily }">
+    Angular 10 представляет модульную архитектуру приложения val
+  </p>
+  <p [ngStyle]="pStyle">
+    Angular 10 представляет модульную архитектуру приложения class
+  </p>
+</div>
+
+<button (click)="incPFontSize()">Increment font size</button>

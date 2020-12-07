@@ -13,3 +13,6 @@
 [styles-and-template](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/styles-and-templates) - Способы приязки стилей и шаблонов к компоненту
 
 [lifecycle](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/lifecycle) - Жизненный цикл
+
+[directive](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/directive) - Директивы (структурные, атрибутные)
+

@@ -6,6 +6,8 @@ import {AppComponent} from './app.component';
 import {FirstMeetingModule} from './first-meeting/first-meeting.module';
 import {StylesAndTemplatesModule} from './styles-and-templates/styles-and-templates.module';
 import { LifecycleModule } from './lifecycle/lifecycle.module';
+import { DirectiveModule } from './directive/directive.module';
+import { ChessModule } from './chess/chess.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LifecycleModule } from './lifecycle/lifecycle.module';
     AppRoutingModule,
     FirstMeetingModule,
     StylesAndTemplatesModule,
-    LifecycleModule
+    LifecycleModule,
+    DirectiveModule,
+    ChessModule
   ],
   providers: [],
   bootstrap: [AppComponent]
