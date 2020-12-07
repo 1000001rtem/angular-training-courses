@@ -9,6 +9,7 @@ import {LifecycleModule} from './lifecycle/lifecycle.module';
 import {DirectiveModule} from './directive/directive.module';
 import {ChessModule} from './chess/chess.module';
 import { DependencyInjectionModule } from './dependency-injection/dependency-injection.module';
+import { RoutingModule } from './routing/routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DependencyInjectionModule } from './dependency-injection/dependency-inj
     LifecycleModule,
     DirectiveModule,
     ChessModule,
-    DependencyInjectionModule
+    DependencyInjectionModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

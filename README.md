@@ -18,4 +18,6 @@
 
 [dependency-injection](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/dependency-injection) - Внедрение зависимостей (Сервисы)
 
+[routing](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/routing) - Маршрутизация
+
 [chess](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/chess) - Шахматная доска

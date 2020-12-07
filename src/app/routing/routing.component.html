@@ -1,0 +1,21 @@
+Стартовая страница
+<nav>
+  <!--  <a routerLink="">Главная</a>-->
+  <!--  <a routerLink="/test">На тест</a>-->
+  <a *ngFor="let route of routes" routerLink="route.path">{{route.path}}</a>
+  <br/>
+  <a routerLink="/test/one">one</a>
+  <br/>
+  <a [routerLink]="['test', 'two']">two</a>
+  <br/>
+  <button (click)="goTest1()">test 1</button>
+  <br/>
+  <button (click)="goTest2()">test 2</button>
+  <br/>
+  <a *ngFor="let item of ['1','2','3','4','5','6','7','8','9','10']"
+     [routerLink]="['test', 'one', item]">  test {{item}}   </a>
+</nav>
+<router-outlet></router-outlet>
+
+
+<!--<app-pipe></app-pipe>-->
