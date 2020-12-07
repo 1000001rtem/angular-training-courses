@@ -1,11 +1,11 @@
-import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
+import {Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core';
 
-@Directive({ selector: '[while]' })
+@Directive({selector: '[while]'})
 export class WhileDirective {
 
   constructor(private templateRef: TemplateRef<any>,
-              private viewContainer: ViewContainerRef)
-  { }
+              private viewContainer: ViewContainerRef) {
+  }
 
   @Input() set while(condition: boolean) {
     if (condition) {

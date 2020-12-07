@@ -16,3 +16,4 @@
 
 [directive](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/directive) - Директивы (структурные, атрибутные)
 
+[chess](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/chess) - Шахматная доска

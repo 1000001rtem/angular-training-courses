@@ -1,0 +1,104 @@
+<table class="chess-board">
+  <tbody>
+  <tr>
+    <th></th>
+    <th>a</th>
+    <th>b</th>
+    <th>c</th>
+    <th>d</th>
+    <th>e</th>
+    <th>f</th>
+    <th>g</th>
+    <th>h</th>
+  </tr>
+  <tr>
+    <th>8</th>
+    <th *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <div *ngIf="i%2!==0">
+        <black-box></black-box>
+      </div>
+      <div *ngIf="i%2===0">
+        <white-box></white-box>
+      </div>
+    </th>
+  </tr>
+  <tr>
+    <th>7</th>
+    <th *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <div *ngIf="i%2===0">
+        <black-box></black-box>
+      </div>
+      <div *ngIf="i%2!==0">
+        <white-box></white-box>
+      </div>
+    </th>
+  </tr>
+  <tr>
+    <th>6</th>
+    <th *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <div *ngIf="i%2!==0">
+        <black-box></black-box>
+      </div>
+      <div *ngIf="i%2===0">
+        <white-box></white-box>
+      </div>
+    </th>
+  </tr>
+  <tr>
+    <th>5</th>
+    <th *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <div *ngIf="i%2===0">
+        <black-box></black-box>
+      </div>
+      <div *ngIf="i%2!==0">
+        <white-box></white-box>
+      </div>
+    </th>
+  </tr>
+  <tr>
+    <th>4</th>
+    <th *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <div *ngIf="i%2!==0">
+        <black-box></black-box>
+      </div>
+      <div *ngIf="i%2===0">
+        <white-box></white-box>
+      </div>
+    </th>
+  </tr>
+  <tr>
+    <th>3</th>
+    <th *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <div *ngIf="i%2===0">
+        <black-box></black-box>
+      </div>
+      <div *ngIf="i%2!==0">
+        <white-box></white-box>
+      </div>
+    </th>
+  </tr>
+  <tr>
+    <th>2</th>
+    <th *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <div *ngIf="i%2!==0">
+        <black-box></black-box>
+      </div>
+      <div *ngIf="i%2===0">
+        <white-box></white-box>
+      </div>
+    </th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <div *ngIf="i%2===0">
+        <black-box></black-box>
+      </div>
+      <div *ngIf="i%2!==0">
+        <white-box></white-box>
+      </div>
+    </th>
+  </tr>
+  </tbody>
+</table>
+
