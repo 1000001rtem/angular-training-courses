@@ -1,0 +1,21 @@
+<p>directive works!</p>
+<input cash #cash="cash" type="text"
+       placeholder="Pick one"
+       aria-label="Number"
+       matInput
+       [matAutocomplete]="auto">
+<mat-autocomplete #auto="matAutocomplete">
+  <mat-option *ngFor="let name of cash.getNames()" [value]="name">
+    {{name}}
+  </mat-option>
+</mat-autocomplete>
+
+<hr/>
+
+<button class="disabled" buttonDisabler mat-flat-button color="primary" (click)="myClick()">
+  Hello
+</button>
+
+<hr/>
+
+<input mask [textMask]="{mask: mask}" [(ngModel)]="myModel" type="text" placeholder="+7(___)___-__-__"/>

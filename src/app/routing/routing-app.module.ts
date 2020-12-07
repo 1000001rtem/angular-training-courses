@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
 import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 import {ErrorComponent} from './error/error.component';
 import {TestComponent} from './test/test.component';
-
 
 
 export const routes: Routes = [
@@ -39,4 +37,5 @@ const extraOptions: ExtraOptions = {
   imports: [RouterModule.forRoot(routes, extraOptions)],
   exports: [RouterModule]
 })
-export class RoutingAppModule { }
+export class RoutingAppModule {
+}

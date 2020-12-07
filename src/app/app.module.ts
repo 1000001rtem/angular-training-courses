@@ -8,8 +8,8 @@ import {StylesAndTemplatesModule} from './styles-and-templates/styles-and-templa
 import {LifecycleModule} from './lifecycle/lifecycle.module';
 import {DirectiveModule} from './directive/directive.module';
 import {ChessModule} from './chess/chess.module';
-import { DependencyInjectionModule } from './dependency-injection/dependency-injection.module';
-import { RoutingModule } from './routing/routing.module';
+import {DependencyInjectionModule} from './dependency-injection/dependency-injection.module';
+import {RoutingModule} from './routing/routing.module';
 
 @NgModule({
   declarations: [

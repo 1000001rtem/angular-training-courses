@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RoutingComponent } from './routing.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {RoutingComponent} from './routing.component';
 import {ErrorComponent} from './error/error.component';
 import {RoutingAppModule} from './routing-app.module';
-
 
 
 @NgModule({
@@ -14,4 +13,5 @@ import {RoutingAppModule} from './routing-app.module';
   ],
   exports: [RoutingComponent]
 })
-export class RoutingModule { }
+export class RoutingModule {
+}

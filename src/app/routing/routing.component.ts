@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router, Routes} from '@angular/router';
 import {routes} from './routing-app.module';
 
