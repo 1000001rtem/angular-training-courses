@@ -10,6 +10,7 @@ import {DirectiveModule} from './directive/directive.module';
 import {ChessModule} from './chess/chess.module';
 import {DependencyInjectionModule} from './dependency-injection/dependency-injection.module';
 import {RoutingModule} from './routing/routing.module';
+import { FormsExampleModule } from './forms/forms-example.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {RoutingModule} from './routing/routing.module';
     DirectiveModule,
     ChessModule,
     DependencyInjectionModule,
-    RoutingModule
+    RoutingModule,
+    FormsExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

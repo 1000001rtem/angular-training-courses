@@ -1,0 +1,26 @@
+<form #myForm="ngForm" novalidate>
+  <input #myInput
+         #directive="ngModel"
+         name="name42"
+         type="text"
+         [(ngModel)]="title"
+         (ngModelChange)="print($event, myInput, directive)"
+         required
+         email
+  />
+
+  <input #myNewInput
+         #newDirective="ngModel"
+         name="name43"
+         type="text"
+         [(ngModel)]="title"
+         (ngModelChange)="print($event, myInput, directive)"
+         required
+         email
+  />
+
+  <button (click)="click(myForm)">Click</button>
+</form>
+
+<pre>{{title}}</pre>
+{{myInput.value}}

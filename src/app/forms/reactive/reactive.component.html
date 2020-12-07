@@ -1,0 +1,55 @@
+<form [formGroup]="myForm" novalidate (ngSubmit)="submit()">
+  <div>
+    <label>Имя</label>
+    <input name="name" formControlName="userName"/>
+
+    <div
+      *ngIf="myForm.controls['userName'].invalid && myForm.controls['userName'].touched">
+      Не указано имя
+    </div>
+  </div>
+  <div>
+    <label>Email</label>
+    <input name="email" formControlName="userEmail"/>
+
+    <div
+      *ngIf="myForm.controls['userEmail'].invalid && myForm.controls['userEmail'].touched">
+      Некорректный email
+    </div>
+  </div>
+  <div>
+    <label>Телефон</label>
+    <input name="phone" formControlName="userPhone"/>
+    <div
+      *ngIf="myForm.controls['userPhone'].invalid && myForm.controls['userPhone'].touched">
+      Некорректный номер телефона
+    </div>
+  </div>
+  <div formArrayName="phones">
+    <div *ngFor="let phone of myForm.controls['phones']['controls']; let i = index">
+      <label>Телефон</label>
+      <input formControlName="{{i}}"/>
+      {{phone.errors | json}}
+      <div
+        *ngIf="phone.invalid && phone.touched">
+        Некорректный номер телефона -  {{phone.getError('phoneValidate')}}
+      </div>
+    </div>
+  </div>
+  <button (click)="addPhone()">
+    Добавить телефон
+  </button>
+  <div>
+    <label>Возраст</label>
+    <input customAsyncValidator name="age" formControlName="userAge"/>
+    <div
+      *ngIf="myForm.controls['userAge'].invalid && myForm.controls['userAge'].touched">
+      Некорректный возраст
+    </div>
+  </div>
+  <div>
+    <button [disabled]="myForm.invalid">
+      Отправить
+    </button>
+  </div>
+</form>
