@@ -20,8 +20,8 @@
 
 [routing](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/routing) - Маршрутизация
 
-[chess](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/chess) - Шахматная доска
-
 [forms](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/forms) - Работа с формами (Обычные, Реактивные, Валидация)
 
 [pipe](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/pipe) - Примеры pipe
+
+[chess](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/chess) - Шахматная доска
