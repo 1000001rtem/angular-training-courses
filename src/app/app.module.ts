@@ -8,6 +8,7 @@ import {StylesAndTemplatesModule} from './styles-and-templates/styles-and-templa
 import {LifecycleModule} from './lifecycle/lifecycle.module';
 import {DirectiveModule} from './directive/directive.module';
 import {ChessModule} from './chess/chess.module';
+import { DependencyInjectionModule } from './dependency-injection/dependency-injection.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {ChessModule} from './chess/chess.module';
     StylesAndTemplatesModule,
     LifecycleModule,
     DirectiveModule,
-    ChessModule
+    ChessModule,
+    DependencyInjectionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

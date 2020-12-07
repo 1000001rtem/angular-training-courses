@@ -16,4 +16,6 @@
 
 [directive](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/directive) - Директивы (структурные, атрибутные)
 
+[dependency-injection](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/dependency-injection) - Внедрение зависимостей (Сервисы)
+
 [chess](https://github.com/1000001rtem/angular-training-courses/tree/master/src/app/chess) - Шахматная доска
